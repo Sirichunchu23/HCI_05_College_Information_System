@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR University</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            background-image: url("https://github.com/Sirichunchu23/photos/blob/main/reading.jpg?raw=true"); /* Replace with valid image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #003366; /* Semi-transparent background */
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: auto;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #53A7E2; /* Highlight color */
+            color: #003366;
+            transform: scale(1.1);
+        }
+
+        /* Main Hero Section */
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-top: 10%; /* Reduced margin to reduce scrolling */
+            line-height: 1.3;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 i {
+            font-size: 1.5em;
+            color: #ddd;
+            font-style: italic;
+        }
+
+        /* Fade-In Animation for Heading */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Event Boxes Section */
+        #event-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px; /* Reduced margin to move boxes up */
+            padding: 20px;
+        }
+
+        .event-box {
+            background-color: rgba(0, 51, 102, 0.8);
+            color: white;
+            width: 45%;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .event-box:hover {
+            background-color: rgba(0, 51, 102, 1);
+            transform: scale(1.05);
+        }
+
+        .event-box h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .learn-more-btn {
+            background-color: #53A7E2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #003366;
+        }
+
+        /* Hidden Event Details */
+        .event-details {
+            display: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .event-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .event-details li {
+            background-color: rgba(0, 51, 102, 0.7);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(0, 51, 102, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px; /* Reduced margin to ensure footer is not too far down */
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        footer a {
+            color: #53A7E2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">SR University</div>
+        <nav>
+            <ul>
+                <li><a href="projectlearningmaterials.html">Learning Materials</a></li>
+                <li><a href="projectevents.html">Events</a></li>
+                <li><a href="projectclubs.html">Clubs</a></li>
+                <li><a href="projectfaculty.html">Faculty</a></li>
+                <li><a href="https://sraap.in/slogin.php">Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content (Hero Section) -->
+    <h1>"Embrace Education, Reach New Elevation"<br><br><i>Best platform for qualitative Education...</i></h1>
+
+    <!-- Event Boxes Section -->
+    <section id="event-section">
+        <!-- Technical Events Box -->
+        <div class="event-box">
+            <h3>On going Technical Events...</h3>
+            <button class="learn-more-btn" onclick="toggleDetails('tech-events')">Learn More</button>
+            <div class="event-details" id="tech-events">
+                <ul>
+                    <li><strong style="color:rgb(202, 138, 42)"><u>Internal Exams/Practicals</u></strong><br><span class="date">Date: November 26, 2024</span><br>Lab exams for students,where score is added to EndTerm.</li>
+                    <li><strong style="color:rgb(202, 138, 42)"><u>EndTerm Examination</u></strong><br><span class="date">Date: December 2, 2024</span><br>End term Examination of 1st sem for all years .</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Non-Technical Events Box -->
+        <div class="event-box">
+            <h3>On going Non-Technical Events...</h3>
+            <button class="learn-more-btn" onclick="toggleDetails('non-tech-events')">Learn More</button>
+            <div class="event-details" id="non-tech-events">
+                <ul>
+                    <li><strong style="color:rgb(202, 138, 42)"><u>Project Showcase</u></strong><br><span class="date">Date: November 21, 2024</span><br>Showcasing the best projects of the students to appreciate them.</li>
+                    <li><strong style="color:rgb(202, 138, 42)"><u>Club Activities and Startup Showcase</u></strong><br><span class="date">Date: November 22, 2024</span><br>Club works will go on...and STARTUP Ideas of the students were showcased.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 SR University. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        function toggleDetails(eventType) {
+            var eventDetails = document.getElementById(eventType);
+            if (eventDetails.style.display === "none" || eventDetails.style.display === "") {
+                eventDetails.style.display = "block";
+            } else {
+                eventDetails.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
